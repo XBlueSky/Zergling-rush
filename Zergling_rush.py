@@ -55,7 +55,7 @@ for i,line in enumerate(row):
         if base == 'B':
             for x in range(i-1, i+2):
                 for y in range(j-1, j+2):
-                    if check[x][y] == 1:
+                    if check[x][y] == 1 and x >=0 and y >=0:
                         row[x][y] = 'z'
 
 
